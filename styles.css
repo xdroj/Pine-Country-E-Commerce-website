@@ -1,0 +1,170 @@
+/*===========Global links*/
+:root{
+  primary: #F6F1DE;
+  secondary: #3E3F5B;
+  green1: #8AB2A6;
+  green2: #ACD3A8;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(primary);
+    margin: 0;
+    padding: 0;
+}
+
+/*============navbar*/
+nav {
+    background: rgba(12, 94, 12, 0.4);
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .navbar-ul li {
+    margin: 0 1rem;
+  }
+  
+  .nav-link {
+    color: var(secondary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    transform: scale(1.1); 
+  }
+
+
+/*=====================hero section*/
+
+#hero {
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-text{
+    border: 1px solid red;
+    font-family: "Poiret one", sans-serif;
+    width: 50vw;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 2em 6em 2em 2em;
+    margin: 0;
+  }
+  
+    img#pclogo{
+    border: 1px solid red;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height:auto;
+    padding: 0 3em 0 0;
+    border-radius: 300px;
+    
+  }
+  
+
+
+/*================Menu Section*/
+#menu{
+  background-color: rgba(250, 235, 215, 0.9);
+  border: 1px solid pink;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ /*=====================Sticky CTA*/
+
+ .cta i {
+  font-size: 1.5rem; 
+  color: #0c5e16;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cta-text span {
+  font-weight: bold;
+}
+
+.cta-text small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.cta:hover {
+  transform: scale(1.5);
+}
+
+.cta-container{
+  border: 1px solid red;
+  color: white;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  height: 2rem;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+div.cta-container{
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+p#take_me_there{
+  font-size: 2rem;
+  color: black;
+}
+
+/*================Gallery Section*/
+#gallery{
+  background-color: black;
+  border: 1px solid pink;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*================Reviews section*/
+
+/*================Socials section*/
+
+/*=================footer*/
+
+/*==============RESPONSIVE MEDIA WUERIES*/
+
+/*==========tABLETS 768px MEDIA*/
+
+/*===========MOBILE 480px MEDIA*/
