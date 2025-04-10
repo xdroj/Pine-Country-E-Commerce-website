@@ -5,6 +5,9 @@
   --green1: #8AB2A6;
   --green2: #ACD3A8;
 }
+* { 
+  outline: 1px solid red; 
+}
 html{
   scroll-behavior: smooth;
 }
@@ -12,7 +15,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: "font-awesome", sans-serif;
+    font-family: "Playfair Display", sans-serif;
 }
 
 /*============Header===navbar*/
@@ -22,7 +25,6 @@ header{
 }
 
 img#pclogo{
-  border: 1px solid red;
   background-color: rgba(255, 255, 255, 0.2);
   width: 6em;
   height:auto;
@@ -61,12 +63,50 @@ nav {
     color: var(--secondary);
     transform: scale(1.1); 
   }
+  .nav-link.active {
+    color: var(--secondary); 
+  }
 
  /*=====================Sticky CTA*/
+.cta{
+  display: inline-block;
+}
 
- .cta i {
-  font-size: 1.5rem; 
-  color: var(--green1green1);
+#cta-icons i{
+  width: 20px;
+  height: auto;  
+  filter: drop-shadow(0 0 0 rgba(138, 178, 166, 0));
+  animation: 
+    idle-pulse 2s infinite ease-in-out, 
+    idle-glow 2s infinite ease-in-out;
+}
+
+@keyframes idle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes hover-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+#googlemap{
+  color: red;
+}
+
+#waze{
+  color: #6DE1D2;
+  animation-delay: 1s; 
+}
+
+
+#cta-icons a:hover i {
+  animation: hover-bounce 0.5s infinite ease !important; 
+}
+
+@keyframes idle-glow {
+  50% { filter: drop-shadow(0 0 6px rgba(138, 178, 166, 0.8)); }
 }
 
 #cta-text {
@@ -75,18 +115,17 @@ nav {
   margin: 0 0;
   text-transform: uppercase;
 }
-#cta-text:hover{
-  transform: 1.1;
-  color: var(--primary);
-}
+
 .cta-container{
-  border: 1px solid red;
   padding: 0.75rem 0;
   text-decoration: none;
   border-radius: 5px;
   align-items: center;
   position: fixed;
   right: 0;
+  bottom: 20px;
+  top: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 div.cta-container{
@@ -99,9 +138,8 @@ div.cta-container{
   display: flex;
   gap: 1em;
 }
-#cta-icons:hover{
-  transform: scale(1.1);
-}
+
+
 
 /*=====================hero section*/
 
@@ -113,14 +151,14 @@ div.cta-container{
   }
   
   .hero-text{
-    border: 1px solid red;
     font-family: "Poiret one", sans-serif;
-    width: 25vw;
+    width: min(25vw, 300px);
     font-size: 2rem;
     text-align: center;
     color: black;
     padding: 2em 6em 2em 2em;
     margin: 0;
+    background: rgba(246, 241, 222, 0.7);
   }
   
 
@@ -128,14 +166,12 @@ div.cta-container{
 
 /*================Menu Section*/
 #menu{
-  border: 1px solid pink;
 }
 
 
 
 /*================Gallery Section*/
 #gallery{
-  border: 1px solid pink;
 }
 
 /*================Reviews section*/
