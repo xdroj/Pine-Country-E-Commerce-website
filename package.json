@@ -1,13 +1,21 @@
 {
-  "name": "pine-country-steakhouse",
+  "name": "pine-country-steaks-and-waffles",
   "version": "1.0.0",
+  "description": "Pine Country Steaks & Waffles Website - Premium steaks and gourmet waffles",
   "type": "module",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
-    "serve": "npx serve ."
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "serve": "npx serve .",
+    "dev": "npx serve . --port 3000"
   },
+  "keywords": ["steaks", "waffles", "restaurant", "website", "baguio"],
+  "author": "Pine Country Steaks & Waffles",
+  "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.40.0"
+    "@playwright/test": "^1.40.0",
+    "serve": "^14.2.1"
   }
 }
