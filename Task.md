@@ -1,60 +1,62 @@
 Phase 1: Core Structure & Setup
-[ ] 1.1. Project Setup:
+[x] 1.1. Project Setup:
 
-[ ] Initialize project folder.
+[x] Initialize project folder.
 
-[ ] Create index.html, style.css, script.js files.
+[x] Create index.html, style.css, script.js files.
 
-[ ] Link CSS and JS files correctly in index.html.
+[x] Link CSS and JS files correctly in index.html.
 
-[ ] 1.2. HTML Skeleton (SEO Optimized):
+[x] 1.2. HTML Skeleton (SEO Optimized):
 
-[ ] Add &lt;!DOCTYPE html&gt;, &lt;html lang="en"&gt;, &lt;head&gt;, &lt;body&gt;.
+[x] Add <!DOCTYPE html>, <html lang="en">, <head>, <body>.
 
-[ ] Populate &lt;head&gt; with:
+[x] Populate <head> with:
 
-[ ] Descriptive &lt;title&gt;.
+[x] Descriptive <title>.
 
-[ ] &lt;meta name="description"&gt;.
+[x] <meta name="description">.
 
-[ ] &lt;meta charset="UTF-8"&gt;, &lt;meta name="viewport"&gt;.
+[x] <meta charset="UTF-8">, <meta name="viewport">.
 
-[ ] Favicon link.
+[x] Favicon link.
 
-[ ] Create semantic sections: &lt;header&gt; (for nav), &lt;section id="hero"&gt;, &lt;section id="menu"&gt;, &lt;section id="gallery"&gt;, &lt;section id="feedback"&gt;, &lt;section id="contact"&gt;, &lt;footer&gt;.
+[x] Create semantic sections: <header> (for nav), <section id="hero">, <section id="menu">, <section id="gallery">, <section id="feedback">, <section id="contact">, <footer>.
 
-[ ] Implement initial structure for the Fire Loader (e.g., a div with specific IDs/classes).
+[x] Implement initial structure for the Fire Loader (e.g., a div with specific IDs/classes).
 
 Phase 2: Design & Styling (CSS)
-[ ] 2.1. Global Styles:
+[x] 2.1. Global Styles:
 
-[ ] Basic resets (box-sizing).
+[x] Basic resets (box-sizing).
 
-[ ] Define base font sizes and family.
+[x] Define base font sizes and family.
 
-[ ] Implement CSS Variables for Light Theme (e.g., --text-color, --background-color).
+[x] Implement CSS Variables for Light Theme (e.g., --text-color, --background-color).
 
-[ ] 2.2. Dark Theme Implementation:
+[x] 2.2. Dark Theme Implementation:
 
-[ ] Define CSS Variables for Dark Theme (e.g., --text-color-dark, --background-color-dark).
+[x] Define CSS Variables for Dark Theme (e.g., --text-color-dark, --background-color-dark).
 
-[ ] Implement a CSS class (e.g., .dark-theme) to apply dark theme variables.
+[x] Implement a CSS class (e.g., .dark-theme) to apply dark theme variables.
 
-[ ] 2.3. Navigation Styling:
+[x] 2.3. Navigation Styling:
 
-[ ] Style sticky navigation bar.
+[x] Style sticky navigation bar (now transparent, hamburger in hero, nav menu fullscreen).
 
-[ ] Style navigation links (hover effects, active state).
+[x] Style navigation links (hover effects, active state).
 
-[ ] 2.4. Hero Section Styling & Parallax:
+[x] 2.4. Hero Section Styling & Parallax:
 
-[ ] Basic layout for hero content.
+[x] Basic layout for hero content.
 
-[ ] Implement CSS for the background image/video.
+[x] Implement CSS for the background video (with zoomed-out effect).
 
-[ ] Initial CSS for the Parallax Effect (e.g., background-attachment: fixed; if pure CSS).
+[x] Initial CSS for the Parallax Effect (if needed).
 
-[ ] 2.5. Menu Section Styling:
+[ ] Add a social media button that links to their respective sites. (facebook, instagram)
+
+[x] 2.5. Menu Section Styling:
 
 [ ] Basic layout for menu categories and items.
 
@@ -76,34 +78,34 @@ Phase 2: Design & Styling (CSS)
 
 [ ] Styling for contact details and map embed.
 
-[ ] 2.8. Responsive Buttons:
+[x] 2.8. Responsive Buttons:
 
-[ ] Apply universal button styles.
+[x] Apply universal button styles.
 
-[ ] Ensure padding, font-size, min-width/height are touch-friendly.
+[x] Ensure padding, font-size, min-width/height are touch-friendly.
 
-[ ] 2.9. Fire Loader Styling:
+[x] 2.9. Fire Loader Styling:
 
-[ ] Initial styling for the loader container.
+[x] Initial styling for the loader container.
 
-[ ] CSS animations for the fire effect and progress bar.
+[x] CSS animations for the fire effect and progress bar.
 
-[ ] 2.10. Mobile/Tablet Pagination Styling:
+[x] 2.10. Mobile/Tablet Pagination Styling:
 
-[ ] Basic styling for pagination dots/buttons.
+[x] Basic styling for pagination dots/buttons.
 
-[ ] Media queries to show/hide pagination based on screen size.
+[x] Media queries to show/hide pagination based on screen size.
 
 Phase 3: Interactivity (JavaScript)
-[ ] 3.1. Smooth Scrolling:
+[x] 3.1. Smooth Scrolling:
 
-[ ] Implement JavaScript for smooth scrolling on navigation link clicks.
+[x] Implement JavaScript for smooth scrolling on navigation link clicks.
 
 [ ] 3.2. Theme Toggle Functionality:
 
 [ ] Get reference to the theme toggle radio button/switch.
 
-[ ] Add event listener to change theme class on &lt;body&gt; or &lt;html&gt;.
+[ ] Add event listener to change theme class on <body> or <html>.
 
 [ ] Save user's preference to localStorage and apply on page load.
 
@@ -111,15 +113,15 @@ Phase 3: Interactivity (JavaScript)
 
 [ ] JavaScript for more advanced or smoother Parallax Effect (e.g., modifying background-position or transform based on scroll).
 
-[ ] 3.4. Fire Loader Control:
+[x] 3.4. Fire Loader Control:
 
-[ ] JavaScript to hide the loader once all critical assets are loaded (e.g., window.onload).
+[x] JavaScript to hide the loader once all critical assets are loaded (e.g., window.onload).
 
 [ ] (Optional) Implement progress tracking if a visual progress bar is desired.
 
-[ ] 3.5. Responsive Navigation (Hamburger Menu for mobile):
+[x] 3.5. Responsive Navigation (Hamburger Menu for mobile):
 
-[ ] Implement toggle functionality for mobile navigation.
+[x] Implement toggle functionality for mobile navigation (hamburger in hero, fullscreen nav menu).
 
 [ ] 3.6. Gallery Lightbox/Modal (if applicable):
 
@@ -140,7 +142,7 @@ Phase 3: Interactivity (JavaScript)
 [ ] Update active pagination indicator.
 
 Phase 4: Content Integration
-[ ] 4.1. Populate Hero Section: Add restaurant name, tagline, and background media.
+[~] 4.1. Populate Hero Section: Add restaurant name, tagline, and background media. *(Tagline and hero logo removed as per latest design)*
 
 [ ] 4.2. Populate Menu Section: Add all menu items, descriptions, prices.
 
